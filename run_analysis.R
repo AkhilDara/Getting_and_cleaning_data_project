@@ -71,5 +71,23 @@ activity_labels <- read_data("activity_labels.txt")
 #Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
 tidy_dataset <- ddply(mean_stddev, .(id, activity), .fun=function(x){ colMeans(x[,-c(1:2)]) })
 colnames(tidy_dataset)[-c(1:2)] <- paste("mean_of_",colnames(tidy_dataset)[-c(1:2)],sep="")
-tidy_dataset <- arrange(tidy_dataset,id,desc(activity))
+colnames(tidy_dataset)[1] <- "Subject"
+tidy_dataset <- arrange(tidy_dataset,id,activity)
+write.table(tidy_dataset,"tidy_dataset.txt",row.names = FALSE)
 saveresults(tidy_dataset,"tidy_dataset")
+
+
+#creating codebook:
+sink('Codebook.md')
+cat(sprintf("#Codebook for tidy_dataset.txt\nThis code book summarizes the data in tidy_dataset.txt\n"))
+cat(sprintf("##Identifiers\n"))
+print(colnames(tidy_dataset)[1])
+cat(" - ID of the test subject\n")
+print(colnames(tidy_dataset)[2])
+cat(" - type of activity performed when the corresponding measurements were taken\n")
+cat(sprintf("##Measurements\n"))
+print(colnames(tidy_dataset)[3:length(colnames(tidy_dataset))])
+cat(sprintf("##Activity Labels\n"))
+cat(sprintf("WALKING (value 1): subject was walking during the test\nWALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test\nWALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test\nSITTING (value 4): subject was sitting during the test\nSTANDING (value 5): subject was standing during the test\nLAYING (value 6): subject was laying down during the test"))
+sink()
+
