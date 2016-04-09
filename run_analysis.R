@@ -72,21 +72,21 @@ activity_labels <- read_data("activity_labels.txt")
 tidy_dataset <- ddply(mean_stddev, .(id, activity), .fun=function(x){ colMeans(x[,-c(1:2)]) })
 colnames(tidy_dataset)[-c(1:2)] <- paste("mean_of_",colnames(tidy_dataset)[-c(1:2)],sep="")
 colnames(tidy_dataset)[1] <- "Subject"
-tidy_dataset <- arrange(tidy_dataset,id,activity)
 write.table(tidy_dataset,"tidy_dataset.txt",row.names = FALSE)
 saveresults(tidy_dataset,"tidy_dataset")
 
 
 #creating codebook:
+if(file.exists("Codebook.md"))  {file.remove("Codebook.md")}
 sink('Codebook.md')
 cat(sprintf("#Codebook for tidy_dataset.txt\nThis code book summarizes the data in tidy_dataset.txt\n"))
 cat(sprintf("##Identifiers\n"))
-print(colnames(tidy_dataset)[1])
-cat(" - ID of the test subject\n")
-print(colnames(tidy_dataset)[2])
-cat(" - type of activity performed when the corresponding measurements were taken\n")
+cat(sprintf("%s - ID of the test subject\n",colnames(tidy_dataset)[1]))
+cat(sprintf("%s - Type of activity performed when the corresponding measurements were taken\n",colnames(tidy_dataset)[2]))
 cat(sprintf("##Measurements\n"))
-print(colnames(tidy_dataset)[3:length(colnames(tidy_dataset))])
+for (i in 3:length(colnames(tidy_dataset))) {
+        cat(sprintf("%d. %s\n",i-2,colnames(tidy_dataset)[i]))
+}
 cat(sprintf("##Activity Labels\n"))
 cat(sprintf("WALKING (value 1): subject was walking during the test\nWALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test\nWALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test\nSITTING (value 4): subject was sitting during the test\nSTANDING (value 5): subject was standing during the test\nLAYING (value 6): subject was laying down during the test"))
 sink()
