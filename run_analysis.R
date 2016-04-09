@@ -88,6 +88,6 @@ for (i in 3:length(colnames(tidy_dataset))) {
         cat(sprintf("\n%d. %s",i-2,colnames(tidy_dataset)[i]))
 }
 cat(sprintf("\n\n##Activity Labels"))
-cat(sprintf("\nWALKING (value 1): subject was walking during the test'\n' WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test'\n'WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test\nSITTING (value 4): subject was sitting during the test\nSTANDING (value 5): subject was standing during the test\nLAYING (value 6): subject was laying down during the test"))
+cat(sprintf("\nWALKING (value 1): subject was walking during the test\n WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test\nWALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test\nSITTING (value 4): subject was sitting during the test\nSTANDING (value 5): subject was standing during the test\nLAYING (value 6): subject was laying down during the test"))
 sink()
 
