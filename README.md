@@ -4,7 +4,7 @@ The purpose of this project is to demonstrate your ability to collect, work with
 
 --------------------------------------------------------------------------------
 
-data for the project:
+##data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -13,6 +13,7 @@ The repository contis following files:
 
 ##Readme.md:
 Description of the entire project
+
 --------------------------------------------------------------------------------
 
 ##run_analysis.R:
@@ -27,10 +28,12 @@ Ths file has code to
 --------------------------------------------------------------------------------
 
 ##tidy_dataset.csv:
-desired output in csv format
+desired output saved in csv format
+
 --------------------------------------------------------------------------------
 
 ##Codebook.md:
 contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information.
+
 --------------------------------------------------------------------------------
 
