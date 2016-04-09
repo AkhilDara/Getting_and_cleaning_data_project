@@ -6,7 +6,7 @@ The purpose of this project is to demonstrate your ability to collect, work with
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The repository contis following files:
+The repository contains following files:
 ##Readme.md:
 Description of the entire project
 
