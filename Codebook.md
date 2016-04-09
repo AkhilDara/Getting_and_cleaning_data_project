@@ -1,0 +1,116 @@
+#Codebook
+This file describes the variables, the data, and the work that I have performed to clean up the data useing the file run_analysis.R
+
+The data for the project is taken from :
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+##functions used in the code
+download.file(download_from, dowloaded_file) -> download the zip file from the download link
+
+unzip(dowloaded_file) -> unzip the file
+
+read_data <- function (file_name,col_names = NULL) -> Create a function to read data from features.txt and convert it into a Data Frame
+
+getdata <- function(type, features) -> read data and build database by merging the data of test and training respectively
+
+saveresults <- function (data,name) -> funciton to save the results in .csv format
+
+rbind(train, test) -> Merge Test and Traning data
+
+final_data$activity <- factor(final_data$activity, levels=activity_labels$V1, labels=activity_labels$V2) -> label the contents of activity as per the labels mentioned in activitie_labels.txt
+
+ddply() -> calculate mean and standard deviation of respective elements.
+
+colnames(tidy_dataset)[-c(1:2)] -> change column names descriptively
+
+##Variable used in the code:
+download_from -> the download link is saved in this variable
+dowloaded_file -> the name of the file downloaded
+final_data -> the merged data
+activity_labels -> labels of activity variable as tank from activity_labels.txt
+tidy_dataset -> data frame containing tidy data
+
+##Variables in Tidy_dataset:
+	         Variable                                  Class    
+
+	 [1,]  "id"                                      "integer"
+	 [2,]  "activity"                                "factor" 
+	 [3,]  "mean_of_tBodyAcc.std...X"                "numeric"
+	 [4,]  "mean_of_tBodyAcc.std...Y"                "numeric"
+	 [5,]  "mean_of_tBodyAcc.std...Z"                "numeric"
+	 [6,]  "mean_of_tGravityAcc.std...X"             "numeric"
+	 [7,]  "mean_of_tGravityAcc.std...Y"             "numeric"
+	 [8,]  "mean_of_tGravityAcc.std...Z"             "numeric"
+	 [9,]  "mean_of_tBodyAccJerk.std...X"            "numeric"
+	 [10,] "mean_of_tBodyAccJerk.std...Y"            "numeric"
+	 [11,] "mean_of_tBodyAccJerk.std...Z"            "numeric"
+	 [12,] "mean_of_tBodyGyro.std...X"               "numeric"
+	 [13,] "mean_of_tBodyGyro.std...Y"               "numeric"
+	 [14,] "mean_of_tBodyGyro.std...Z"               "numeric"
+	 [15,] "mean_of_tBodyGyroJerk.std...X"           "numeric"
+	 [16,] "mean_of_tBodyGyroJerk.std...Y"           "numeric"
+	 [17,] "mean_of_tBodyGyroJerk.std...Z"           "numeric"
+	 [18,] "mean_of_tBodyAccMag.std.."               "numeric"
+	 [19,] "mean_of_tGravityAccMag.std.."            "numeric"
+	 [20,] "mean_of_tBodyAccJerkMag.std.."           "numeric"
+	 [21,] "mean_of_tBodyGyroMag.std.."              "numeric"
+	 [22,] "mean_of_tBodyGyroJerkMag.std.."          "numeric"
+	 [23,] "mean_of_fBodyAcc.std...X"                "numeric"
+	 [24,] "mean_of_fBodyAcc.std...Y"                "numeric"
+	 [25,] "mean_of_fBodyAcc.std...Z"                "numeric"
+	 [26,] "mean_of_fBodyAccJerk.std...X"            "numeric"
+	 [27,] "mean_of_fBodyAccJerk.std...Y"            "numeric"
+	 [28,] "mean_of_fBodyAccJerk.std...Z"            "numeric"
+	 [29,] "mean_of_fBodyGyro.std...X"               "numeric"
+	 [30,] "mean_of_fBodyGyro.std...Y"               "numeric"
+	 [31,] "mean_of_fBodyGyro.std...Z"               "numeric"
+	 [32,] "mean_of_fBodyAccMag.std.."               "numeric"
+	 [33,] "mean_of_fBodyBodyAccJerkMag.std.."       "numeric"
+	 [34,] "mean_of_fBodyBodyGyroMag.std.."          "numeric"
+	 [35,] "mean_of_fBodyBodyGyroJerkMag.std.."      "numeric"
+	 [36,] "mean_of_tBodyAcc.mean...X"               "numeric"
+	 [37,] "mean_of_tBodyAcc.mean...Y"               "numeric"
+	 [38,] "mean_of_tBodyAcc.mean...Z"               "numeric"
+	 [39,] "mean_of_tGravityAcc.mean...X"            "numeric"
+	 [40,] "mean_of_tGravityAcc.mean...Y"            "numeric"
+	 [41,] "mean_of_tGravityAcc.mean...Z"            "numeric"
+	 [42,] "mean_of_tBodyAccJerk.mean...X"           "numeric"
+	 [43,] "mean_of_tBodyAccJerk.mean...Y"           "numeric"
+	 [44,] "mean_of_tBodyAccJerk.mean...Z"           "numeric"
+	 [45,] "mean_of_tBodyGyro.mean...X"              "numeric"
+	 [46,] "mean_of_tBodyGyro.mean...Y"              "numeric"
+	 [47,] "mean_of_tBodyGyro.mean...Z"              "numeric"
+	 [48,] "mean_of_tBodyGyroJerk.mean...X"          "numeric"
+	 [49,] "mean_of_tBodyGyroJerk.mean...Y"          "numeric"
+	 [50,] "mean_of_tBodyGyroJerk.mean...Z"          "numeric"
+	 [51,] "mean_of_tBodyAccMag.mean.."              "numeric"
+	 [52,] "mean_of_tGravityAccMag.mean.."           "numeric"
+	 [53,] "mean_of_tBodyAccJerkMag.mean.."          "numeric"
+	 [54,] "mean_of_tBodyGyroMag.mean.."             "numeric"
+	 [55,] "mean_of_tBodyGyroJerkMag.mean.."         "numeric"
+	 [56,] "mean_of_fBodyAcc.mean...X"               "numeric"
+	 [57,] "mean_of_fBodyAcc.mean...Y"               "numeric"
+	 [58,] "mean_of_fBodyAcc.mean...Z"               "numeric"
+	 [59,] "mean_of_fBodyAcc.meanFreq...X"           "numeric"
+	 [60,] "mean_of_fBodyAcc.meanFreq...Y"           "numeric"
+	 [61,] "mean_of_fBodyAcc.meanFreq...Z"           "numeric"
+	 [62,] "mean_of_fBodyAccJerk.mean...X"           "numeric"
+	 [63,] "mean_of_fBodyAccJerk.mean...Y"           "numeric"
+	 [64,] "mean_of_fBodyAccJerk.mean...Z"           "numeric"
+	 [65,] "mean_of_fBodyAccJerk.meanFreq...X"       "numeric"
+	 [66,] "mean_of_fBodyAccJerk.meanFreq...Y"       "numeric"
+	 [67,] "mean_of_fBodyAccJerk.meanFreq...Z"       "numeric"
+	 [68,] "mean_of_fBodyGyro.mean...X"              "numeric"
+	 [69,] "mean_of_fBodyGyro.mean...Y"              "numeric"
+	 [70,] "mean_of_fBodyGyro.mean...Z"              "numeric"
+	 [71,] "mean_of_fBodyGyro.meanFreq...X"          "numeric"
+	 [72,] "mean_of_fBodyGyro.meanFreq...Y"          "numeric"
+	 [73,] "mean_of_fBodyGyro.meanFreq...Z"          "numeric"
+	 [74,] "mean_of_fBodyAccMag.mean.."              "numeric"
+	 [75,] "mean_of_fBodyAccMag.meanFreq.."          "numeric"
+	 [76,] "mean_of_fBodyBodyAccJerkMag.mean.."      "numeric"
+	 [77,] "mean_of_fBodyBodyAccJerkMag.meanFreq.."  "numeric"
+	 [78,] "mean_of_fBodyBodyGyroMag.mean.."         "numeric"
+	 [79,] "mean_of_fBodyBodyGyroMag.meanFreq.."     "numeric"
+	 [80,] "mean_of_fBodyBodyGyroJerkMag.mean.."     "numeric"
+	 [81,] "mean_of_fBodyBodyGyroJerkMag.meanFreq.." "numeric"
