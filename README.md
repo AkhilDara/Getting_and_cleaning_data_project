@@ -19,7 +19,7 @@ Ths file has code to <br />
 5. Uses descriptive activity names to name the activities in the data set<br />
 6. Appropriately labels the data set with descriptive variable names.<br />
 7. From the data set in step 6, creates a second, independent tidy data set with the average of each variable for each activity and each subject.<br />
-
+8. Create Codebook for tidy_dataset.txt <br />
 ##Variables and functions in the Code:
 functions used in the code:<br />
 
