@@ -3,6 +3,13 @@ This code book summarizes the data in tidy_dataset.txt
 ##Identifiers
 Subject - ID of the test subject<br />
 Activity - Type of activity performed when the corresponding measurements were taken<br />
+##Activity Labels<br />
+WALKING (value 1): subject was walking during the test<br />
+WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test<br />
+WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test<br />
+SITTING (value 4): subject was sitting during the test<br />
+STANDING (value 5): subject was standing during the test<br />
+LAYING (value 6): subject was laying down during the test<br />
 ##Measurements
 1. mean_of_tBodyAcc.std...X<br />
 2. mean_of_tBodyAcc.std...Y<br />
@@ -83,10 +90,3 @@ Activity - Type of activity performed when the corresponding measurements were t
 77. mean_of_fBodyBodyGyroMag.meanFreq..<br />
 78. mean_of_fBodyBodyGyroJerkMag.mean..<br />
 79. mean_of_fBodyBodyGyroJerkMag.meanFreq..<br />
-##Activity Labels<br />
-WALKING (value 1): subject was walking during the test<br />
-WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test<br />
-WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test<br />
-SITTING (value 4): subject was sitting during the test<br />
-STANDING (value 5): subject was standing during the test<br />
-LAYING (value 6): subject was laying down during the test
