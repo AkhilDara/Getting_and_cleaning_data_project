@@ -12,7 +12,7 @@ Description of the entire project
 
 ##run_analysis.R:
 Ths file has code to 
-1. download data from the given link
+1. download data from the given link \n
 2. Uzip the downloaded file
 3. Merges the training and the test sets to create one data set.
 4. Extracts only the measurements on the mean and standard deviation for each      measurement.

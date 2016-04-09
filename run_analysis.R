@@ -79,7 +79,8 @@ saveresults(tidy_dataset,"tidy_dataset")
 #creating codebook:
 if(file.exists("Codebook.md"))  {file.remove("Codebook.md")}
 sink('Codebook.md')
-cat(sprintf("#Codebook for tidy_dataset.txt\nThis code book summarizes the data in tidy_dataset.txt"))
+cat(sprintf("#Codebook for tidy_dataset.txt"))
+cat(sprintf("\nThis code book summarizes the data in tidy_dataset.txt"))
 cat(sprintf("\n##Identifiers"))
 cat(sprintf("\n%s - ID of the test subject",colnames(tidy_dataset)[1]))
 cat(sprintf("\n%s - Type of activity performed when the corresponding measurements were taken",colnames(tidy_dataset)[2]))
