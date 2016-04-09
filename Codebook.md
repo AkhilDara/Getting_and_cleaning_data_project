@@ -4,86 +4,86 @@ This code book summarizes the data in tidy_dataset.txt
 Subject - ID of the test subject<br />
 Activity - Type of activity performed when the corresponding measurements were taken<br />
 ##Measurements
-1. mean_of_tBodyAcc.std...X
-2. mean_of_tBodyAcc.std...Y
-3. mean_of_tBodyAcc.std...Z
-4. mean_of_tGravityAcc.std...X
-5. mean_of_tGravityAcc.std...Y
-6. mean_of_tGravityAcc.std...Z
-7. mean_of_tBodyAccJerk.std...X
-8. mean_of_tBodyAccJerk.std...Y
-9. mean_of_tBodyAccJerk.std...Z
-10. mean_of_tBodyGyro.std...X
-11. mean_of_tBodyGyro.std...Y
-12. mean_of_tBodyGyro.std...Z
-13. mean_of_tBodyGyroJerk.std...X
-14. mean_of_tBodyGyroJerk.std...Y
-15. mean_of_tBodyGyroJerk.std...Z
-16. mean_of_tBodyAccMag.std..
-17. mean_of_tGravityAccMag.std..
-18. mean_of_tBodyAccJerkMag.std..
-19. mean_of_tBodyGyroMag.std..
-20. mean_of_tBodyGyroJerkMag.std..
-21. mean_of_fBodyAcc.std...X
-22. mean_of_fBodyAcc.std...Y
-23. mean_of_fBodyAcc.std...Z
-24. mean_of_fBodyAccJerk.std...X
-25. mean_of_fBodyAccJerk.std...Y
-26. mean_of_fBodyAccJerk.std...Z
-27. mean_of_fBodyGyro.std...X
-28. mean_of_fBodyGyro.std...Y
-29. mean_of_fBodyGyro.std...Z
-30. mean_of_fBodyAccMag.std..
-31. mean_of_fBodyBodyAccJerkMag.std..
-32. mean_of_fBodyBodyGyroMag.std..
-33. mean_of_fBodyBodyGyroJerkMag.std..
-34. mean_of_tBodyAcc.mean...X
-35. mean_of_tBodyAcc.mean...Y
-36. mean_of_tBodyAcc.mean...Z
-37. mean_of_tGravityAcc.mean...X
-38. mean_of_tGravityAcc.mean...Y
-39. mean_of_tGravityAcc.mean...Z
-40. mean_of_tBodyAccJerk.mean...X
-41. mean_of_tBodyAccJerk.mean...Y
-42. mean_of_tBodyAccJerk.mean...Z
-43. mean_of_tBodyGyro.mean...X
-44. mean_of_tBodyGyro.mean...Y
-45. mean_of_tBodyGyro.mean...Z
-46. mean_of_tBodyGyroJerk.mean...X
-47. mean_of_tBodyGyroJerk.mean...Y
-48. mean_of_tBodyGyroJerk.mean...Z
-49. mean_of_tBodyAccMag.mean..
-50. mean_of_tGravityAccMag.mean..
-51. mean_of_tBodyAccJerkMag.mean..
-52. mean_of_tBodyGyroMag.mean..
-53. mean_of_tBodyGyroJerkMag.mean..
-54. mean_of_fBodyAcc.mean...X
-55. mean_of_fBodyAcc.mean...Y
-56. mean_of_fBodyAcc.mean...Z
-57. mean_of_fBodyAcc.meanFreq...X
-58. mean_of_fBodyAcc.meanFreq...Y
-59. mean_of_fBodyAcc.meanFreq...Z
-60. mean_of_fBodyAccJerk.mean...X
-61. mean_of_fBodyAccJerk.mean...Y
-62. mean_of_fBodyAccJerk.mean...Z
-63. mean_of_fBodyAccJerk.meanFreq...X
-64. mean_of_fBodyAccJerk.meanFreq...Y
-65. mean_of_fBodyAccJerk.meanFreq...Z
-66. mean_of_fBodyGyro.mean...X
-67. mean_of_fBodyGyro.mean...Y
-68. mean_of_fBodyGyro.mean...Z
-69. mean_of_fBodyGyro.meanFreq...X
-70. mean_of_fBodyGyro.meanFreq...Y
-71. mean_of_fBodyGyro.meanFreq...Z
-72. mean_of_fBodyAccMag.mean..
-73. mean_of_fBodyAccMag.meanFreq..
-74. mean_of_fBodyBodyAccJerkMag.mean..
-75. mean_of_fBodyBodyAccJerkMag.meanFreq..
-76. mean_of_fBodyBodyGyroMag.mean..
-77. mean_of_fBodyBodyGyroMag.meanFreq..
-78. mean_of_fBodyBodyGyroJerkMag.mean..
+1. mean_of_tBodyAcc.std...X<br />
+2. mean_of_tBodyAcc.std...Y<br />
+3. mean_of_tBodyAcc.std...Z<br />
+4. mean_of_tGravityAcc.std...X<br />
+5. mean_of_tGravityAcc.std...Y<br />
+6. mean_of_tGravityAcc.std...Z<br />
+7. mean_of_tBodyAccJerk.std...X<br />
+8. mean_of_tBodyAccJerk.std...Y<br />
+9. mean_of_tBodyAccJerk.std...Z<br />
+10. mean_of_tBodyGyro.std...X<br />
+11. mean_of_tBodyGyro.std...Y<br />
+12. mean_of_tBodyGyro.std...Z<br />
+13. mean_of_tBodyGyroJerk.std...X<br />
+14. mean_of_tBodyGyroJerk.std...Y<br />
+15. mean_of_tBodyGyroJerk.std...Z<br />
+16. mean_of_tBodyAccMag.std..<br />
+17. mean_of_tGravityAccMag.std..<br />
+18. mean_of_tBodyAccJerkMag.std..<br />
+19. mean_of_tBodyGyroMag.std..<br />
+20. mean_of_tBodyGyroJerkMag.std..<br />
+21. mean_of_fBodyAcc.std...X<br />
+22. mean_of_fBodyAcc.std...Y<br />
+23. mean_of_fBodyAcc.std...Z<br />
+24. mean_of_fBodyAccJerk.std...X<br />
+25. mean_of_fBodyAccJerk.std...Y<br />
+26. mean_of_fBodyAccJerk.std...Z<br />
+27. mean_of_fBodyGyro.std...X<br />
+28. mean_of_fBodyGyro.std...Y<br />
+29. mean_of_fBodyGyro.std...Z<br />
+30. mean_of_fBodyAccMag.std..<br />
+31. mean_of_fBodyBodyAccJerkMag.std..<br />
+32. mean_of_fBodyBodyGyroMag.std..<br />
+33. mean_of_fBodyBodyGyroJerkMag.std..<br />
+34. mean_of_tBodyAcc.mean...X<br />
+35. mean_of_tBodyAcc.mean...Y<br />
+36. mean_of_tBodyAcc.mean...Z<br />
+37. mean_of_tGravityAcc.mean...X<br />
+38. mean_of_tGravityAcc.mean...Y<br />
+39. mean_of_tGravityAcc.mean...Z<br />
+40. mean_of_tBodyAccJerk.mean...X<br />
+41. mean_of_tBodyAccJerk.mean...Y<br />
+42. mean_of_tBodyAccJerk.mean...Z<br />
+43. mean_of_tBodyGyro.mean...X<br />
+44. mean_of_tBodyGyro.mean...Y<br />
+45. mean_of_tBodyGyro.mean...Z<br />
+46. mean_of_tBodyGyroJerk.mean...X<br />
+47. mean_of_tBodyGyroJerk.mean...Y<br />
+48. mean_of_tBodyGyroJerk.mean...Z<br />
+49. mean_of_tBodyAccMag.mean..<br />
+50. mean_of_tGravityAccMag.mean..<br />
+51. mean_of_tBodyAccJerkMag.mean..<br />
+52. mean_of_tBodyGyroMag.mean..<br />
+53. mean_of_tBodyGyroJerkMag.mean..<br />
+54. mean_of_fBodyAcc.mean...X<br />
+55. mean_of_fBodyAcc.mean...Y<br />
+56. mean_of_fBodyAcc.mean...Z<br />
+57. mean_of_fBodyAcc.meanFreq...X<br />
+58. mean_of_fBodyAcc.meanFreq...Y<br />
+59. mean_of_fBodyAcc.meanFreq...Z<br />
+60. mean_of_fBodyAccJerk.mean...X<br />
+61. mean_of_fBodyAccJerk.mean...Y<br />
+62. mean_of_fBodyAccJerk.mean...Z<br />
+63. mean_of_fBodyAccJerk.meanFreq...X<br />
+64. mean_of_fBodyAccJerk.meanFreq...Y<br />
+65. mean_of_fBodyAccJerk.meanFreq...Z<br />
+66. mean_of_fBodyGyro.mean...X<br />
+67. mean_of_fBodyGyro.mean...Y<br />
+68. mean_of_fBodyGyro.mean...Z<br />
+69. mean_of_fBodyGyro.meanFreq...X<br />
+70. mean_of_fBodyGyro.meanFreq...Y<br />
+71. mean_of_fBodyGyro.meanFreq...Z<br />
+72. mean_of_fBodyAccMag.mean..<br />
+73. mean_of_fBodyAccMag.meanFreq..<br />
+74. mean_of_fBodyBodyAccJerkMag.mean..<br />
+75. mean_of_fBodyBodyAccJerkMag.meanFreq..<br />
+76. mean_of_fBodyBodyGyroMag.mean..<br />
+77. mean_of_fBodyBodyGyroMag.meanFreq..<br />
+78. mean_of_fBodyBodyGyroJerkMag.mean..<br />
 79. mean_of_fBodyBodyGyroJerkMag.meanFreq..<br />
-##Activity Labels
+##Activity Labels<br />
 WALKING (value 1): subject was walking during the test<br />
 WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test<br />
 WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test<br />
