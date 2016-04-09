@@ -2,6 +2,7 @@
 This code book summarizes the data in tidy_dataset.txt
 ##Identifiers
 Subject - ID of the test subject
+
 activity - Type of activity performed when the corresponding measurements were taken
 ##Measurements
 1. mean_of_tBodyAcc.std...X
