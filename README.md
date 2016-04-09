@@ -11,50 +11,37 @@ The repository contains following files:
 Description of the entire project
 
 ##run_analysis.R:
-Ths file has code to 
+Ths file has code to <br />
 1. download data from the given link <br />
-
-2. Uzip the downloaded file
-3. Merges the training and the test sets to create one data set.
-4. Extracts only the measurements on the mean and standard deviation for each      measurement.
-5. Uses descriptive activity names to name the activities in the data set
-6. Appropriately labels the data set with descriptive variable names.
-7. From the data set in step 6, creates a second, independent tidy data set with   the average of each variable for each activity and each subject.
+2. Uzip the downloaded file <br />
+3. Merges the training and the test sets to create one data set.<br />
+4. Extracts only the measurements on the mean and standard deviation for each measurement.<br />
+5. Uses descriptive activity names to name the activities in the data set<br />
+6. Appropriately labels the data set with descriptive variable names.<br />
+7. From the data set in step 6, creates a second, independent tidy data set with the average of each variable for each activity and each subject.<br />
 
 ##Variables and functions in the Code:
-functions used in the code:
+functions used in the code:<br />
 
-download.file(download_from, dowloaded_file) 
-	download the zip file from the download link
-unzip(dowloaded_file) 
-	unzip the file
-read_data <- function (file_name,col_names = NULL) 
-	Create a function to read data from features.txt and convert it into a Data Frame
-getdata <- function(type, features) 
-	read data and build database by merging the data of test and training respectively
-saveresults <- function (data,name) 
-	funciton to save the results in .csv format
-rbind(train, test) 
-	Merge Test and Traning data
-final_data$activity <- factor(final_data$activity, levels=activity_labels$V1, labels=activity_labels$V2) 
-	label the contents of activity as per the labels mentioned in activitie_labels.txt
-ddply() 
-	calculate mean and standard deviation of respective elements.
-colnames(tidy_dataset)[-c(1:2)] 
-	change column names descriptively
+download.file(download_from, dowloaded_file) ->	download the zip file from the download link<br />
+unzip(dowloaded_file) -> unzip the file<br />
+read_data <- function (file_name,col_names = NULL)<br /> 
+	Create a function to read data from features.txt and convert it into a Data Frame<br />
+getdata <- function(type, features) ->	read data and build database by merging the data of test and training respectively<br />
+saveresults <- function (data,name) -> funciton to save the results in .csv format<br />
+rbind(train, test) -> Merge Test and Traning data<br />
+final_data$activity <- factor(final_data$activity, levels=activity_labels$V1, labels=activity_labels$V2) <br />
+	label the contents of activity as per the labels mentioned in activitie_labels.txt<br />
+ddply() -> calculate mean and standard deviation of respective elements.<br />
+colnames(tidy_dataset)[-c(1:2)] -> change column names descriptively<br />
 
-Variables used in the code:
+Variables used in the code:<br />
 
-download_from 
-	the download link is saved in this variable 
-dowloaded_file 
-	the name of the file downloaded 
-final_data 
-	the merged data 
-activity_labels 
-	labels of activity variable as tank from activity_labels.txt 
-tidy_dataset 
-	data frame containing tidy data
+download_from -> the download link is saved in this variable <br />
+dowloaded_file -> the name of the file downloaded <br />
+final_data -> the merged data <br />
+activity_labels -> labels of activity variable as tank from activity_labels.txt <br />
+tidy_dataset ->	data frame containing tidy data<br />
 
 ##tidy_dataset.csv:
 desired output saved in csv format
